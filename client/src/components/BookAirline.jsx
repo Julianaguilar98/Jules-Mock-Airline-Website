@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect, Fragment } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { AirlineContext } from "../context/AirlineContext";
 import AirportFinder from "../apis/AirportFinder";
+import './BookAirline.css';
 
 function makeid(length) {
    var result = '';
@@ -60,7 +61,7 @@ const BookAirline = (props) => {
 		<div className="list-group">
 			<table className="table table-hover table-dark">
 			  <thead>
-				<tr className="bg-secondary">
+				<tr className="list">
 					<th scope="col">Flight#</th>
 					<th scope="col">From</th>
 					<th scope="col">To</th>
@@ -108,7 +109,7 @@ const BookAirline = (props) => {
                     type="text"
                 />
             </div>
-			
+
           <div className="form-group">
                 <label htmlFor="Credit Card">Credit Card</label>
                 <input
@@ -129,8 +130,8 @@ const BookAirline = (props) => {
                     className="form-control"
                     type="text"
                 />
-            </div>			
-			
+            </div>
+
           <div className="form-group">
                 <label htmlFor="Phone">Phone</label>
                 <input
@@ -140,8 +141,8 @@ const BookAirline = (props) => {
                     className="form-control"
                     type="text"
                 />
-            </div>				
-			
+            </div>
+
             <button
                 type="submit"
                 onClick={handleSubmit}
