@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import AirportFinder from "../apis/AirportFinder";
 import { AirlineContext } from "../context/AirlineContext";
+import './AddAirline.css';
 
 const AddAirline = () => {
   const { addAirline } = useContext(AirlineContext);
@@ -29,7 +30,7 @@ const AddAirline = () => {
               value={departure_airport}
               onChange={(e) => setDepartureAirport(e.target.value)}
               type="text"
-              className="form-control"
+              className="departure"
               placeholder="departure_airport"
             />
           </div>
@@ -37,7 +38,7 @@ const AddAirline = () => {
             <input
               value={arrival_airport}
               onChange={(e) => setArrivalAirport(e.target.value)}
-              className="form-control"
+              className="arrival"
               type="text"
               placeholder="arrival_airport"
             />
@@ -45,7 +46,7 @@ const AddAirline = () => {
           <button
             onClick={handleSubmit}
             type="submit"
-            className="btn btn-primary"
+            className="search"
           >
             Search
           </button>

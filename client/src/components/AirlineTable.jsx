@@ -1,8 +1,9 @@
-import React, {useEffect, useContext} from 'react'
+import React, {useEffect, useContext} from 'react';
 import AirportFinder from "../apis/AirportFinder";
 import { AirlineContext } from "../context/AirlineContext";
 import { useHistory } from "react-router-dom";
-import { withRouter } from 'react-router'
+import { withRouter } from 'react-router';
+import './AirlineTable.css';
 
 const AirlineTable = (props) => {
 	const {airlines, setAirline} = useContext(AirlineContext);
@@ -14,7 +15,7 @@ const AirlineTable = (props) => {
 				setAirline(tableResponse.data.data.airlines)
 			} catch(err){}
 		};
-		
+
 		fetchTableData();
 	},[]);
 
@@ -27,7 +28,7 @@ const AirlineTable = (props) => {
 		<div className="list-group">
 			<table className="table table-hover table-dark">
 			  <thead>
-				<tr className="bg-secondary">
+				<tr className="list">
 					<th scope="col">Flight#</th>
 					<th scope="col">From</th>
 					<th scope="col">To</th>
