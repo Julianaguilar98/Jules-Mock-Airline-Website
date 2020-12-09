@@ -1,0 +1,13 @@
+.search {
+    background-color: #0b1f66;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.departure,.arrival {
+    background-color: lightblue;
+    border: 1px solid black;
+    width: 500px;
+    height: 40px;
+}

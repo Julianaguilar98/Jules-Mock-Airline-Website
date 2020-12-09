@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import './Header.css';
 
 const Header = () => {
     return (
         <div>
-            <h1 className="font-weight-bold display-3 text-center">
+            <h1 className="title">
                 Airline Web Page
             </h1>
         </div>
