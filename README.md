@@ -4,7 +4,7 @@
 
 ### Installation
 
-1. `git clone https://github.com/seungej/AirlineDatabase`
+1. `git clone https://github.com/Julianaguilar98/MockAirlineWebsite`
 2. `cd client`
 3. `npm start`
 
