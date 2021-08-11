@@ -1,6 +1,8 @@
 # Airline Database
 
 ## Airline Database App for COSC3380
+Database created using the PERN stack. Website reads list of bookings available and user can make a purchase, and will update the table. This change is reflected on the website.
+
 
 ### Installation
 
